@@ -11,7 +11,7 @@
         android:layout_width="255dp"
         android:layout_height="71dp"
         android:layout_marginLeft="35dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -46,8 +46,8 @@
 
     <LinearLayout
         android:layout_width="354dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="70dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="10dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,44 +65,18 @@
         <TextView
             android:id="@+id/InterpretR"
             android:layout_width="295dp"
-            android:layout_height="70dp"
+            android:layout_height="120dp"
             android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
             android:background="@color/white"
             android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="209dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="165dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:text="Sentences"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/sentancesR"
-            android:layout_width="296dp"
-            android:layout_height="180dp"
-            android:background="@color/white"
-            android:text="" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="336dp"
         android:layout_height="112dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="415dp"
+        android:layout_marginTop="405dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -136,7 +110,7 @@
         android:layout_width="77dp"
         android:layout_height="30dp"
         android:layout_marginLeft="195dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="360dp"
         android:onClick="btnNext"
         android:text="next"
         android:textAllCaps="false"
@@ -149,7 +123,7 @@
         android:layout_width="77dp"
         android:layout_height="30dp"
         android:layout_marginLeft="45dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="360dp"
         android:onClick="btnDelete"
         android:text="delete"
         android:textAllCaps="false"

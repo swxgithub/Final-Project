@@ -144,9 +144,6 @@ public class Review extends AppCompatActivity {
             View Interpret = ((TextView)findViewById(R.id.InterpretR));
             ((TextView) Interpret).setText(wordValue.getInterpret());
 
-            View Santance = ((TextView)findViewById(R.id.sentancesR));
-            ((TextView) Santance).setText("   "+wordValue.getSentOrig());
-
             View PsE = ((TextView)findViewById(R.id.psER));
             ((TextView) PsE).setText(wordValue.getPsE());
 

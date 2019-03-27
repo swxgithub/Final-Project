@@ -8,8 +8,11 @@
     android:background="#48D1CC">
 
     <LinearLayout
-        android:layout_width="418dp"
-        android:layout_height="53dp"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -26,7 +29,7 @@
 
         <EditText
             android:id="@+id/inputWord"
-            android:layout_width="225dp"
+            android:layout_width="200dp"
             android:layout_height="38dp"
             android:layout_marginTop="6dp"
             android:background="@color/white"
@@ -55,7 +58,7 @@
         android:layout_width="262dp"
         android:layout_height="80dp"
         android:layout_marginLeft="65dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="75dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -65,6 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:layout_marginTop="2dp"
             android:text=""
             android:textColor="@color/colorPrimaryDark"
             android:textSize="25dp"
@@ -87,9 +91,9 @@
 
     <LinearLayout
         android:layout_width="354dp"
-        android:layout_height="108dp"
+        android:layout_height="200dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="160dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -106,45 +110,18 @@
         <TextView
             android:id="@+id/Interpret"
             android:layout_width="296dp"
-            android:layout_height="70dp"
+            android:layout_height="120dp"
             android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
             android:background="@color/white"
             android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="200dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:text="Sentences"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/sentances"
-            android:layout_width="299dp"
-            android:layout_height="180dp"
-            android:background="@color/white"
-            android:text="" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="331dp"
         android:layout_height="107dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginTop="405dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

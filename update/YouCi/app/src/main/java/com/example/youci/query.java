@@ -12,8 +12,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 import android.view.View;
 import android.widget.TextView;
+import android.view.inputmethod.InputMethodManager;
+import android.content.Context;
 
 import java.io.InputStreamReader;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class query extends AppCompatActivity {
     public final static String iCiBaURL1 = "http://dict-co.iciba.com/api/dictionary.php?w=";
@@ -31,6 +35,8 @@ public class query extends AppCompatActivity {
 
     public void btnQuery(View view){
         new getInfoOnline().execute();
+        InputMethodManager im = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        im.hideSoftInputFromWindow(getCurrentFocus().getApplicationWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
     public void btnReview(View view){
@@ -73,8 +79,6 @@ public class query extends AppCompatActivity {
              String word = inputWord.getText().toString().trim();
              WordValue wordValue=null;
              try{
-                 //String tempUrl=query.iCiBaURL1+tempWord+query.iCiBaURL2;
-                 //ystem.out.println(tempUrl);
                     //从网络获得输入流
                  if(tempInput!=null){
                      System.out.println("here");
@@ -94,9 +98,6 @@ public class query extends AppCompatActivity {
 
              View Interpret = ((TextView)findViewById(R.id.Interpret));
              ((TextView) Interpret).setText(wordValue.getInterpret());
-
-             View Santance = ((TextView)findViewById(R.id.sentances));
-             ((TextView) Santance).setText("  "+wordValue.getSentOrig());
 
              View psE = ((TextView)findViewById(R.id.psE));
              ((TextView) psE).setText("/"+wordValue.getPsE()+"/");
